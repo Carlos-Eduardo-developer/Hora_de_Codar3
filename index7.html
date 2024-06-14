@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 0, soma = 0; i < 6; i++) {
+  let nota = parseFloat(prompt("Digite a nota do aluno (entre 0 e 10):"));
+  while (nota < 0 || nota > 10) {
+    nota = parseFloat(prompt("Valor inválido. Por favor, digite uma nota entre 0 e 10:"));
+  }
+  soma += nota;
+}
+alert("A média do aluno é: " + (soma / 6).toFixed(2));
+    </script>
+</body>
+</html>
